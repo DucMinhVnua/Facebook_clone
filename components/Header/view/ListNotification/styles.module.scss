@@ -1,0 +1,135 @@
+.container {
+  .wrapper_notification {
+    width: 22rem;
+
+    position: absolute;
+    background-color: #242526;
+    border-radius: 10px;
+    z-index: 100;
+    bottom: 10px;
+    top: 4.5rem;
+    right: 1rem;
+    overflow-y: auto;
+
+    .wrapper_heading_dotsIcon {
+      position: relative;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 3rem;
+
+      .layout_heading {
+        padding-left: 1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .heading {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+      }
+
+      .layout_dotsIcon {
+        padding: 0 1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .wrapper_dotsIcon {
+          padding: 0.5rem;
+          border-radius: 100rem;
+        }
+
+        &:hover .wrapper_dotsIcon {
+          background-color: #3a3b3c;
+        }
+      }
+    }
+
+    .wrapper_doubleButton {
+      .layout_button {
+        padding: 0.8rem 1rem;
+      }
+    }
+
+    .wrapper_notification_list {
+      .wrapper_notification_heading {
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .title {
+          font-size: 1rem;
+          color: #fff;
+        }
+
+        .action {
+          font-size: 0.9rem;
+          color: #4499ff;
+        }
+      }
+
+      .wrapper_notification_main {
+        padding: 0 0.5rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .wrapper_popup_action {
+    width: 20rem;
+    position: absolute;
+    background-color: #242526;
+    border-radius: 10px;
+    z-index: 100;
+    top: 8.5rem;
+    right: 2rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      top: -6px;
+      right: 10px;
+
+      width: 1rem;
+      height: 1rem;
+      transform: rotate(45deg);
+      z-index: -1;
+      background-color: #242526;
+      border: 1px solid #2d2e2f;
+    }
+
+    .list_action {
+      position: relative;
+      z-index: 1;
+      padding: 0.5rem 0.5rem;
+      background-color: #242526;
+      border-radius: 10px;
+
+      .item_action {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0.5rem;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3a3b3c;
+        }
+
+        .wrapper_icon {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

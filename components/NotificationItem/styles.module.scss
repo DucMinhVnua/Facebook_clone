@@ -1,0 +1,67 @@
+.wrapper_notification_item {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #3a3b3c;
+  }
+
+  .wrapper_avatar {
+    position: relative;
+    width: 13.5rem;
+    height: 3.5rem;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100rem;
+    }
+
+    .wrapper_icon {
+      position: absolute;
+      bottom: -10px;
+      right: -5px;
+      background-color: #1796f4;
+      width: 1.7rem;
+      height: 1.7rem;
+      border-radius: 100rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .wrapper_content {
+    padding-left: 0.8rem;
+
+    .content {
+      color: #e2e6e9;
+      font-size: 0.9rem;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+
+      .user_name {
+      }
+    }
+
+    .time {
+      color: #a0a4a8;
+      font-size: 0.8rem;
+    }
+
+    .time_active {
+      color: #4499ff;
+      font-size: 0.8rem;
+    }
+  }
+}

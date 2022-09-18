@@ -1,0 +1,64 @@
+.wrapper_chat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    background-color: #3a3b3c;
+  }
+
+  .avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-width: 3rem;
+    min-height: 3rem;
+
+    .img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100rem;
+    }
+  }
+
+  .content {
+    flex: 1;
+    padding-left: 0.8rem;
+
+    .heading {
+      .name {
+        color: #d3d4d7;
+        font-size: 0.9rem;
+      }
+    }
+
+    .message {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .text {
+        width: 13rem;
+        max-width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #b1b3ba;
+        font-size: 0.8rem;
+      }
+
+      .time {
+        max-width: 30%;
+        text-align: end;
+        color: #b1b3ba;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

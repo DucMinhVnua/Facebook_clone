@@ -1,0 +1,19 @@
+.container {
+  color: #e2e6e9;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100rem;
+
+  &:hover {
+    background-color: #3a3b3c;
+  }
+}
+
+.active {
+  color: #2d88ff;
+  background-color: rgb(39 56 82);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(39, 56, 82, 0.713);
+  }
+}
